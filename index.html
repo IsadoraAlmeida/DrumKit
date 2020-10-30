@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Drum Kit</h1>
+    </header>
+    <div id="drum">
+        <table class="keys">
+            <tr>
+                <td>
+                    <input type="button" value="A" data-key="65" class="key" onclick="playSoundClick(65)">
+                    <input type="button" value="S" data-key="83" class="key" onclick="playSoundClick(83)">
+                    <input type="button" value="D" data-key="68" class="key" onclick="playSoundClick(68)">
+                    <input type="button" value="F" data-key="70" class="key" onclick="playSoundClick(70)">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="H" data-key="72" class="key" onclick="playSoundClick(72)">
+                    <input type="button" value="J" data-key="74" class="key" onclick="playSoundClick(74)">
+                    <input type="button" value="K" data-key="75" class="key" onclick="playSoundClick(75)">
+                    <input type="button" value="L" data-key="76" class="key" onclick="playSoundClick(76)">
+                </td>
+            </tr>
+        </table>
+        <table class="bigger">
+            <tr>
+                <td>
+                    <input type="button" value="Space" data-key="32" class="key" onclick="playSoundClick(32)">
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>By: <a href="https://github.com/IsadoraAlmeida">Isadora Almeida</a></footer>
+
+    <audio data-key="65" src="clap.wav"></audio>
+    <audio data-key="83" src="hihat.wav"></audio>
+    <audio data-key="68" src="kick.wav"></audio>
+    <audio data-key="70" src="openhat.wav"></audio>
+    <audio data-key="72" src="boom.wav"></audio>
+    <audio data-key="74" src="ride.wav"></audio>
+    <audio data-key="75" src="snare.wav"></audio>
+    <audio data-key="76" src="tom.wav"></audio>
+    <audio data-key="32" src="tink.wav"></audio>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
