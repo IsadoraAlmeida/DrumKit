@@ -28,6 +28,6 @@ function removeTransition(e) {
     e.target.classList.remove('clicked')
 }
 
-addEventListener('keydown', playSound)
 const keys = Array.from(document.querySelectorAll('.key'))
 keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+addEventListener('keydown', playSound)
